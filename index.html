@@ -1,0 +1,227 @@
+Creating an HTML webpage for your exercise guide involves writing HTML code to structure your content and adding some CSS for styling. Here’s a simple example to get you started:
+
+### HTML Structure
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Fitness Guide</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        header, section {
+            padding: 20px;
+            margin: 10px;
+        }
+        header {
+            background: #0073e6;
+            color: white;
+            text-align: center;
+        }
+        nav {
+            background: #f4f4f4;
+            padding: 10px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #0073e6;
+        }
+        h2 {
+            color: #0073e6;
+        }
+        .exercise {
+            margin-bottom: 20px;
+        }
+        .exercise img {
+            max-width: 100%;
+            height: auto;
+        }
+        .exercise div {
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Team Fitness Guide</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#warmup">Warm-Up Exercises</a></li>
+        <li><a href="#cardio">Cardio Exercises</a></li>
+        <li><a href="#strength">Strength Training</a></li>
+        <li><a href="#cooldown">Cool-Down Exercises</a></li>
+        <li><a href="#safety">Safety Tips</a></li>
+        <li><a href="#schedule">Weekly Exercise Plan</a></li>
+        <li><a href="#progress">Progress Tracking</a></li>
+        <li><a href="#glossary">Glossary</a></li>
+    </ul>
+</nav>
+
+<section id="intro">
+    <h2>Introduction</h2>
+    <p>Welcome to our team fitness guide! This program is designed to help you improve your strength, endurance, and overall health. Each section provides detailed instructions, benefits, and visuals to guide you through each exercise.</p>
+</section>
+
+<section id="warmup">
+    <h2>Warm-Up Exercises</h2>
+    <div class="exercise">
+        <h3>High Knees</h3>
+        <img src="https://example.com/high_knees.jpg" alt="High Knees">
+        <div>
+            <p><strong>Description:</strong> A full-body warm-up exercise that increases your heart rate and prepares your muscles for more intense activity.</p>
+            <p><strong>Instructions:</strong></p>
+            <ol>
+                <li>Stand with your feet hip-width apart.</li>
+                <li>Lift your right knee to your chest.</li>
+                <li>Switch to lift your left knee to your chest.</li>
+                <li>Continue the movement, alternating legs, at a quick pace.</li>
+            </ol>
+            <p><strong>Benefits:</strong> Improves cardiovascular endurance and warms up the lower body.</p>
+            <p><strong>Common Mistakes:</strong> Not lifting the knees high enough, leaning backward or forward.</p>
+            <p><strong>Modifications:</strong> March in place if you cannot perform the high-impact version.</p>
+        </div>
+    </div>
+</section>
+
+<section id="cardio">
+    <h2>Cardio Exercises</h2>
+    <div class="exercise">
+        <h3>Jumping Jacks</h3>
+        <img src="https://example.com/jumping_jacks.jpg" alt="Jumping Jacks">
+        <div>
+            <p><strong>Description:</strong> A full-body exercise that increases your heart rate and enhances cardiovascular endurance.</p>
+            <p><strong>Instructions:</strong></p>
+            <ol>
+                <li>Stand with your feet together and hands at your sides.</li>
+                <li>Jump your feet out to the sides while raising your arms above your head.</li>
+                <li>Jump back to the starting position.</li>
+            </ol>
+            <p><strong>Benefits:</strong> Improves cardiovascular fitness and coordination.</p>
+            <p><strong>Common Mistakes:</strong> Not fully extending arms, landing heavily on feet.</p>
+            <p><strong>Modifications:</strong> Step out instead of jumping for a low-impact version.</p>
+        </div>
+    </div>
+</section>
+
+<section id="strength">
+    <h2>Strength Training</h2>
+    <div class="exercise">
+        <h3>Squats</h3>
+        <img src="https://example.com/squats.jpg" alt="Squats">
+        <div>
+            <p><strong>Description:</strong> A foundational lower-body exercise that targets the quadriceps, hamstrings, and glutes.</p>
+            <p><strong>Instructions:</strong></p>
+            <ol>
+                <li>Stand with your feet shoulder-width apart.</li>
+                <li>Lower your body by bending your knees and pushing your hips back.</li>
+                <li>Keep your back straight and chest up.</li>
+                <li>Return to the starting position.</li>
+            </ol>
+            <p><strong>Benefits:</strong> Builds lower-body strength and improves balance.</p>
+            <p><strong>Common Mistakes:</strong> Letting knees go past toes, rounding the back.</p>
+            <p><strong>Modifications:</strong> Hold a weight for added resistance.</p>
+        </div>
+    </div>
+</section>
+
+<section id="cooldown">
+    <h2>Cool-Down Exercises</h2>
+    <div class="exercise">
+        <h3>Hamstring Stretch</h3>
+        <img src="https://example.com/hamstring_stretch.jpg" alt="Hamstring Stretch">
+        <div>
+            <p><strong>Description:</strong> A static stretch to improve flexibility in the hamstrings.</p>
+            <p><strong>Instructions:</strong></p>
+            <ol>
+                <li>Sit on the ground with your legs extended.</li>
+                <li>Reach forward towards your toes.</li>
+                <li>Hold the stretch for 15-30 seconds.</li>
+            </ol>
+            <p><strong>Benefits:</strong> Increases flexibility and reduces muscle soreness.</p>
+            <p><strong>Common Mistakes:</strong> Bouncing while stretching, rounding the back.</p>
+        </div>
+    </div>
+</section>
+
+<section id="safety">
+    <h2>Safety Tips</h2>
+    <p>Always warm up before starting your workout. Use proper form to prevent injuries. Stay hydrated and listen to your body.</p>
+</section>
+
+<section id="schedule">
+    <h2>Weekly Exercise Plan</h2>
+    <p><strong>Monday:</strong></p>
+    <ul>
+        <li>Warm-Up (10 minutes)</li>
+        <li>Cardio (20 minutes)</li>
+        <li>Strength Training (20 minutes)</li>
+        <li>Cool-Down (10 minutes)</li>
+    </ul>
+    <p><strong>Wednesday:</strong></p>
+    <ul>
+        <li>Warm-Up (10 minutes)</li>
+        <li>Cardio (20 minutes)</li>
+        <li>Strength Training (20 minutes)</li>
+        <li>Cool-Down (10 minutes)</li>
+    </ul>
+    <p><strong>Friday:</strong></p>
+    <ul>
+        <li>Warm-Up (10 minutes)</li>
+        <li>Cardio (20 minutes)</li>
+        <li>Strength Training (20 minutes)</li>
+        <li>Cool-Down (10 minutes)</li>
+    </ul>
+</section>
+
+<section id="progress">
+    <h2>Progress Tracking</h2>
+    <table border="1">
+        <tr>
+            <th>Date</th>
+            <th>Exercise</th>
+            <th>Reps/Sets</th>
+            <th>Comments</th>
+        </tr>
+        <tr>
+            <td>2024-06-24</td>
+            <td>Squats</td>
+            <td>3x15</td>
+            <td>Felt strong</td>
+        </tr>
+        <tr>
+            <td>2024-06-26</td>
+            <td>Jumping Jacks</td>
+            <td>3x20</td>
+            <td>Improved stamina</td>
+        </tr>
+        <tr>
+            <td>2024-06-28</td>
+            <td>High Knees</td>
+            <td>3x30</td>
+            <td>Need to lift knees higher</td>
+        </tr>
+    </table>
+</section>
+
+<section id="glossary">
+    <h2>Glossary</h2>
+    <p><strong>Reps:</strong> Repetitions, or the
